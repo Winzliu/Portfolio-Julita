@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="Reset.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bree+Serif&family=Inconsolata:wght@500&family=Oswald&family=Permanent+Marker&family=Rye&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar">
+      <div class="logo">
+        <h3>Portfolio</h3>
+      </div>
+      <div class="menu">
+        <ul>
+          <li>
+            <a href="#Home">Home</a>
+          </li>
+          <li>
+            <a href="#About">About</a>
+          </li>
+          <li>
+            <a href="#Product">Product</a>
+          </li>
+          <li>
+            <a href="#Contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="menu-toggle">
+        <input type="checkbox" name="" id="" />
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+
+    <script>
+      const menuT = document.querySelector(".menu-toggle input");
+      const nav = document.querySelector("div.menu");
+
+      menuT.addEventListener("click", function () {
+        nav.classList.toggle("slide");
+      });
+    </script>
+    <!-- akhir navbar -->
+
+    <!-- jumbotron -->
+    <header class="header" id="Home">
+      <div class="profile">
+        <div class="profile-image">
+          <img src="Image/julita.png" alt="" />
+        </div>
+        <div class="profile-text">
+          <h2>Julita Xu</h2>
+          <p>Artist</p>
+        </div>
+      </div>
+    </header>
+    <!-- akhir jumbotron -->
+
+    <!-- about -->
+    <div class="about" id="About">
+      <div class="container">
+        <h2>About</h2>
+        <hr />
+        <br /><br />
+        <div class="about-text">
+          <p>
+            Hi! My name is Julita and u can call me Jul. I’m an 18 years old
+            artist who did digital art. I’m a college student at Institut
+            Teknologi Sepuluh Nopember (ITS) majoring in Visual Design
+            Communication.
+          </p>
+          <p>
+            It’s my first time opening commissions and I will draw it with my
+            own style which contains juicy lips, pale skin, and desaturated
+            colors that will not hurt yo eyez ^^... A support by you means a lot
+            to me (support=new art supplies >.<).
+          </p>
+        </div>
+        <p class="thankyou">Thankyou!</p>
+      </div>
+    </div>
+    <!-- akhir about -->
+
+    <!-- product -->
+    <div class="product" id="Product">
+      <div class="judul">
+        <h2>Product</h2>
+        <hr />
+        <br /><br />
+      </div>
+      <div class="container">
+        <button>
+          <div class="card">
+            <div class="circle">
+              <h1>HeadShot</h1>
+            </div>
+            <div class="content">
+              <h2>HeadShot</h2>
+              <ul>
+                <li class="price">Price : Rp.45.000</li>
+                <br /><br /><br />
+                <li>
+                  Desc : Lorem ipsum dolor sit, amet consectetur adipisicing
+                  elit. Minus laborum id iusto quo, velit facere dignissimos
+                  deserunt molestias ipsam exercitationem quisquam a, nobis,
+                  nemo eaque.
+                </li>
+              </ul>
+            </div>
+            <img class="product-img" src="Image/headshot.png" alt="" />
+          </div>
+        </button>
+
+        <button class="button2">
+          <div class="card2">
+            <div class="circle">
+              <h1>HalfBody</h1>
+            </div>
+            <div class="content">
+              <h2>HalfBody</h2>
+              <ul>
+                <li class="price">Price : Rp.55.000</li>
+                <br /><br /><br />
+                <li>
+                  Desc : Lorem ipsum dolor sit, amet consectetur adipisicing
+                  elit. Minus laborum id iusto quo, velit facere dignissimos
+                  deserunt molestias ipsam exercitationem quisquam a, nobis,
+                  nemo eaque.
+                </li>
+              </ul>
+            </div>
+            <img class="product-img" src="Image/halfbody.png" alt="" />
+          </div>
+        </button>
+
+        <button class="button3">
+          <div class="card3">
+            <div class="circle">
+              <h1>
+                +BackGround <br />
+                /Lighting
+              </h1>
+            </div>
+            <div class="content">
+              <h2>+BackGround <br />/Lighting</h2>
+              <ul>
+                <li class="price">Price : +Rp.5.000</li>
+                <br /><br /><br />
+                <li>
+                  <p>
+                    Desc : Lorem ipsum dolor sit, amet consectetur adipisicing
+                    elit. Minus laborum id iusto quo, velit facere dignissimos
+                    deserunt molestias ipsam exercitationem quisquam a, nobis,
+                    nemo eaque.
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <img
+              class="product-img"
+              src="Image/background+shining.png"
+              alt=""
+            />
+          </div>
+        </button>
+      </div>
+    </div>
+    <!-- akhir product -->
+
+    <!-- contact -->
+    <div class="contact" id="Contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <hr />
+        <br /><br />
+        <div class="icon">
+        <div class="Whatsapp">
+          <a href="https://api.whatsapp.com/send?phone=6285361435586"><ion-icon name="logo-whatsapp"></ion-icon></a>
+          <br>
+          <p>WhatsApp</p>
+        </div>
+
+        <div class="Instagram">
+          <a href="https://www.instagram.com/julitasuu/"><ion-icon name="logo-instagram"></ion-icon></a>
+          <br>
+          <p>Instagram</p>
+        </div>
+      </div>
+    </div>
+    <!-- akhir contact -->
+
+    <!-- footer -->
+    <div class="footer">
+      <h1>Copyright &copy 2022, Alwin Liufandy</h1>
+    </div>
+    <!-- akhir footer -->
+
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
