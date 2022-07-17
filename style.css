@@ -965,7 +965,7 @@ button {
     align-items: center;
     margin: auto;
     margin-bottom: 20px;
-    width: 90%;
+    width: 95%;
   }
 
   .product .container .card2.active {
@@ -974,7 +974,7 @@ button {
     align-items: center;
     margin: auto;
     margin-bottom: 20px;
-    width: 90%;
+    width: 95%;
   }
 
   .product .container .card3.active {
@@ -983,7 +983,7 @@ button {
     align-items: center;
     margin: auto;
     margin-bottom: 20px;
-    width: 90%;
+    width: 95%;
   }
 
   .product .container .card4.active {
@@ -991,7 +991,7 @@ button {
     flex-direction: column;
     align-items: center;
     margin: auto;
-    width: 90%;
+    width: 95%;
   }
   /* akhir product */
 
