@@ -606,7 +606,7 @@ button {
 }
 
 .product .card3 .content h2 {
-  font-size: 3em;
+  font-size: 2.5em;
   font-weight: bolder;
   font-family: "Rye", cursive;
   margin-bottom: 20px;
@@ -982,6 +982,7 @@ button {
     flex-direction: column;
     align-items: center;
     margin: auto;
+    margin-bottom: 20px;
     width: 90%;
   }
 
