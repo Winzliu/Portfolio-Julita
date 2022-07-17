@@ -185,7 +185,6 @@ body {
 .header .profile .profile-text h2 {
   color: white;
   -webkit-text-stroke: 3px black;
-  text-shadow: 2px 2px 5px rgb(255, 0, 0);
   font-size: 5em;
   font-family: "Permanent Marker", cursive;
 }
@@ -623,7 +622,7 @@ button {
 .product .card3 .product-img {
   position: relative;
   width: 70%;
-  top: -20px;
+  top: 10px;
   transform: scale(0);
   opacity: 0;
   transition: 0.5s;
