@@ -2,10 +2,6 @@
 $(window).scroll(function(){
   var wScroll = $(this).scrollTop();
 
-  $('.header .profile').css({
-    'transform' : 'translate(0px, '+ wScroll/50 +'%)'
-  })
-
   $('.header .profile .profile-image').css({
     'transform' : 'translate(0px, '+ wScroll/20 +'%)'
   })
@@ -14,23 +10,19 @@ $(window).scroll(function(){
     'transform' : 'translate(0px, '+ wScroll/40 +'%)'
   })
 
-  $('.header .profile .profile-text p').css({
-    'transform' : 'translate(0px, '+ wScroll/80 +'%)'
-  })
-
-  if(wScroll > 700){
+  if(wScroll > 600){
     $('.navbar').addClass('muncul')
     $('.about .container .about-text').addClass('see')
     $('.about .container .thankyou').addClass('see')
   }
 
-  if(wScroll < 700){
+  if(wScroll < 600){
     $('.navbar').removeClass('muncul')
     $('.about .container .about-text').removeClass('see')
     $('.about .container .thankyou').removeClass('see')
   }
 
-  if(wScroll > 600){
+  if(wScroll > 550){
     $('.about .container .about-text').addClass('see')
     $('.about .container .thankyou').addClass('see')
   }
@@ -58,4 +50,12 @@ $(window).scroll(function(){
 
       produT.addEventListener("click", function () {
         pra.classList.toggle("active");
+      });
+
+      // card4
+      const produTe = document.querySelector(".product .container .button4");
+      const prae = document.querySelector(".product .container .card4");
+
+      produTe.addEventListener("click", function () {
+        prae.classList.toggle("active");
       });
