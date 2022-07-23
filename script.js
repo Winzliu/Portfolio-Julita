@@ -2,12 +2,8 @@
 $(window).scroll(function(){
   var wScroll = $(this).scrollTop();
 
-  $('.header .profile .profile-image').css({
-    'transform' : 'translate(0px, '+ wScroll/20 +'%)'
-  })
-
-  $('.header .profile .profile-text').css({
-    'transform' : 'translate(0px, '+ wScroll/40 +'%)'
+  $('.header .profile').css({
+    'transform' : 'translate(0px, '+ wScroll/60 +'%)'
   })
 
   if(wScroll > 600){

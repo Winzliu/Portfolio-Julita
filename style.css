@@ -144,13 +144,26 @@ body {
   height: 100vh;
   border-radius: 0 0 5px 5px;
   justify-content: center;
+  align-items: center;
 }
 
 .header .profile {
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 50%;
+  width: 80%;
+  height: 80%;
+  transition: 0.5s;
 }
 
 .header .profile .profile-image {
@@ -944,19 +957,23 @@ button {
   }
 
   .navbar .menu ul li a {
-    border: 2px solid black;
-    padding: 0px 50px;
-    background-color: rgba(0, 0, 0, 0.503);
     border-radius: 10px;
-    box-sizing: border-box;
-    transition: 1s;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    padding: 10px 100px;
+    display: block;
+    text-decoration: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.759);
+    transition: 0.5s;
   }
 
-  .navbar .menu ul li a:hover {
-    border: 2px solid rgb(255, 255, 255);
-    padding: 0px 100px;
-    background-color: rgba(255, 255, 255, 0.759);
-    text-shadow: 2px 2px 2px rgb(161, 161, 161);
+  .navbar .menu ul li:hover a {
+    cursor: pointer;
+    box-shadow: 0 40px 5px -20px black;
+    transform: scale(0.9);
+    background-color: white;
     color: black;
   }
 
@@ -970,6 +987,9 @@ button {
   /* akhir navbar */
 
   /* jumbotron */
+  .header .profile {
+    width: 95%;
+  }
   /* akhir jumbotron */
 
   /* about */
