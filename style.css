@@ -163,7 +163,7 @@ body {
   align-content: center;
   justify-content: center;
   width: 80%;
-  height: 600px;
+  height: 500px;
 }
 
 .header .profile .profile-image {
@@ -987,7 +987,7 @@ button {
 
   /* jumbotron */
   .header .profile {
-    width: 95%;
+    width: 90%;
   }
 
   .header .profile .profile-image img {
