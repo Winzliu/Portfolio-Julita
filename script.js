@@ -1,11 +1,7 @@
 // efek paralax
 $(window).scroll(function(){
   var wScroll = $(this).scrollTop();
-
-  $('.header .profile').css({
-    'transform' : 'translate(0px, '+ wScroll/60 +'%)'
-  })
-
+  
   if(wScroll > 600){
     $('.navbar').addClass('muncul')
     $('.about .container .about-text').addClass('see')
