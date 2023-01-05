@@ -1,0 +1,29 @@
+.w-awal {
+  width: 230px;
+  height: 230px;
+}
+
+.w-akhir {
+  width: 400px;
+  height: 380px;
+}
+
+.scale-awal {
+  transform: scale(1);
+}
+
+.scale-akhir {
+  transform: scale(0);
+}
+
+@media (min-width: 768px) {
+  .w-awal {
+    width: 280px;
+    height: 280px;
+  }
+
+  .w-akhir {
+    height: 440px;
+    width: 280px;
+  }
+}

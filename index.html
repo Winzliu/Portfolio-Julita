@@ -4,229 +4,87 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="Reset.css" />
-
+    <title>Jul's Commission</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bree+Serif&family=Inconsolata:wght@500&family=Oswald&family=Permanent+Marker&family=Rye&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&display=swap"
       rel="stylesheet"
     />
+    <!-- akhir fonts -->
   </head>
   <body>
-    <!-- navbar -->
-    <nav class="navbar">
-      <div class="logo">
-        <h3>Portfolio</h3>
+    <!-- background -->
+    <div
+      style="
+        opacity: 1;
+        background-image: linear-gradient(#fda4af 2.2px, transparent 2.2px),
+          linear-gradient(to right, #fda4af 2.2px, #fecdd3 2.2px);
+        background-size: 50px 50px;
+      "
+      class="bg-rose-100 fixed top-0 bottom-0 right-0 left-0 z-[-9999]"
+    ></div>
+    <!-- akhir background -->
+    <!-- card -->
+    <div class="bg-rose-100 w-4/5 m-auto py-10 mt-10 lg:w-4/6 rounded-md p-5">
+      <!-- profile -->
+      <div class="text-center mb-10">
+        <p
+          style="font-family: 'Chakra Petch', sans-serif; color: #503838"
+          class="font-bold text-5xl"
+        >
+          Julita Xu
+        </p>
+        <p
+          style="font-family: 'Chakra Petch', sans-serif; color: #503838"
+          class="font-bold text-3xl"
+        >
+          Visual Communication Design || IDN
+        </p>
       </div>
-      <div class="menu">
-        <ul>
-          <li>
-            <a href="#Home">Home</a>
-          </li>
-          <li>
-            <a href="#About">About</a>
-          </li>
-          <li>
-            <a href="#Product">Product</a>
-          </li>
-          <li>
-            <a href="#Contact">Contact</a>
-          </li>
-        </ul>
+      <!-- akhir profile -->
+      <!-- button -->
+      <div>
+        <a
+          href="commission/index.html"
+          class="bg-rose-200 text-center w-10/12 block m-auto p-3 rounded-lg text-2xl font-semibold hover:bg-rose-400 transition-all duration-500 text-white"
+          style="font-family: 'Chakra Petch', sans-serif"
+          >COMMISSION</a
+        >
+        <a
+          href="AboutMe/index.html"
+          class="bg-rose-300 text-center w-10/12 block m-auto p-3 rounded-lg text-2xl font-semibold hover:bg-rose-400 transition-all duration-500 my-10 text-white"
+          style="font-family: 'Chakra Petch', sans-serif"
+          >ABOUT ME</a
+        >
       </div>
-
-      <div class="menu-toggle">
-        <input type="checkbox" name="" id="" />
-        <span></span>
-        <span></span>
-        <span></span>
+      <!-- akhir button -->
+      <!-- link -->
+      <div class="flex justify-center gap-10">
+        <ion-icon
+          style="color: #503838"
+          name="logo-instagram"
+          class="text-3xl"
+        ></ion-icon>
+        <ion-icon
+          style="color: #503838"
+          name="logo-youtube"
+          class="text-3xl"
+        ></ion-icon>
+        <ion-icon
+          style="color: #503838"
+          name="logo-tiktok"
+          class="text-3xl"
+        ></ion-icon>
       </div>
-    </nav>
-
-    <script>
-      const menuT = document.querySelector(".menu-toggle input");
-      const nav = document.querySelector("div.menu");
-
-      menuT.addEventListener("click", function () {
-        nav.classList.toggle("slide");
-      });
-    </script>
-    <!-- akhir navbar -->
-
-    <!-- jumbotron -->
-    <header class="header" id="Home">
-      <div class="profile">
-        <div class="profile-image">
-          <img src="Image/julita.png" alt="" />
-        </div>
-        <div class="profile-text">
-          <h2>Julita Xu</h2>
-          <p>Artist</p>
-        </div>
-      </div>
-    </header>
-    <!-- akhir jumbotron -->
-
-    <!-- about -->
-    <div class="about" id="About">
-      <div class="container">
-        <h2>About</h2>
-        <hr />
-        <br /><br />
-        <div class="about-text">
-          <p>
-            Hi! My name is Julita and u can call me Jul. I’m an 18 years old
-            artist who did digital art. I’m a college student at Institut
-            Teknologi Sepuluh Nopember (ITS) majoring in Visual Design
-            Communication.
-          </p>
-          <p>
-            It’s my first time opening commissions and I will draw it with my
-            own style which contains juicy lips, pale skin, and desaturated
-            colors that will not hurt yo eyez ^^... A support by you means a lot
-            to me (support=new art supplies >.<).
-          </p>
-        </div>
-        <p class="thankyou">Thankyou!</p>
-      </div>
+      <!-- akhir link -->
     </div>
-    <!-- akhir about -->
-
-    <!-- product -->
-    <div class="product" id="Product">
-      <div class="judul">
-        <h2>Product</h2>
-        <hr />
-        <br /><br />
-      </div>
-      <div class="container">
-        <button>
-          <div class="card">
-            <div class="circle">
-              <h1>HeadShot</h1>
-            </div>
-            <div class="content">
-              <h2>HeadShot</h2>
-              <ul>
-                <li class="price">Price : Rp.40.000</li>
-                <br /><br /><br />
-              </ul>
-            </div>
-            <img class="product-img" src="Image/headshot.png" alt="" />
-          </div>
-        </button>
-
-        <button class="button2">
-          <div class="card2">
-            <div class="circle">
-              <h1>HalfBody</h1>
-            </div>
-            <div class="content">
-              <h2>HalfBody</h2>
-              <ul>
-                <li class="price">Price : Rp.50.000</li>
-                <br /><br /><br />
-              </ul>
-            </div>
-            <img class="product-img" src="Image/halfbody.png" alt="" />
-          </div>
-        </button>
-
-        <button class="button3">
-          <div class="card3">
-            <div class="circle">
-              <h1>
-                +BackGround <br />
-                /Lighting
-              </h1>
-            </div>
-            <div class="content">
-              <h2>+BackGround <br />/Lighting</h2>
-              <ul>
-                <li class="price">Price : +Rp.5.000</li>
-                <br />
-                <li>
-                  <p>
-                    Desc :You are allowed to request what background you want and where the source of light came from , ex: I'd like the character to lean against the window while the sun hitting from the top left
-                  </p>
-                </li>
-              </ul>
-            </div>
-            <img
-              class="product-img"
-              src="Image/background+shining.png"
-              alt=""
-            />
-          </div>
-        </button>
-
-        <button class="button4">
-          <div class="card4">
-            <div class="circle">
-              <h1>
-                Rules
-              </h1>
-            </div>
-            <div class="content">
-              <h2>Do’s & Don’ts</h2>
-              <ul class="kiri">
-                <li><p>Do's:</p></li>
-                <li><p>1. Send a proper picture for a good reference</p></li>
-                <li><p>2. Describe the pose</p></li>
-                <li><p>3. Describe the background and lighting position (optional)</p></li>
-                <li><p>4. Anime, OC, Fanart, Couple ✅</p></li>
-                <li><p>5. Priced per character</p></li>
-                <li><p>6. Pay after the sketch is finished</p></li>
-                <br>
-                <li>
-                  <p>Don’ts:</p>
-                </li>
-                <li><p>1. Spamming</p></li>
-                <li><p>2. Mecha, Old people, Furry, Animal, NSFW, Humanoid ❎</p></li>
-                <li><p>3. Weird pose</p></li>
-                <li><p></p></li>
-              </ul>
-            </div>
-          </div>
-        </button>
-        <h1 class="days">Will be done in 1-7 days</h1>
-      </div>
-    </div>
-    <!-- akhir product -->
-
-    <!-- contact -->
-    <div class="contact" id="Contact">
-      <div class="container">
-        <h2>Contact</h2>
-        <hr />
-        <br /><br />
-        <div class="icon">
-          <div class="Instagram">
-            <a href="https://www.instagram.com/Jaintbrush/"><ion-icon name="logo-instagram"></ion-icon></a>
-            <br>
-            <p>Instagram</p>
-          </div>
-          <div class="payment">
-              <img src="Image/Logo-ShopeePay.png" alt="">
-              <img src="Image/BNi.png" alt="">
-              <img src="Image/seabank.png" alt="">
-              <p>Payment</p>
-        </div>
-      </div>
-    </div>
-    <!-- akhir contact -->
-
-    <!-- footer -->
-    <div class="footer">
-      <h1>Copyright &copy 2022, Alwin Liufandy</h1>
-    </div>
-    <!-- akhir footer -->
-
-    <script src="jquery-3.6.0.min.js"></script>
-    <script src="script.js"></script>
+    <!-- akhir card -->
+    <script src="JavaScript/script.js"></script>
+    <script src="JavaScript/jquery-3.6.0.min.js"></script>
+    <!-- ionicons -->
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
