@@ -14,6 +14,9 @@
       rel="stylesheet"
     />
     <!-- akhir fonts -->
+    <!-- aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- akhir aos -->
   </head>
   <body>
     <!-- background -->
@@ -28,56 +31,86 @@
     ></div>
     <!-- akhir background -->
     <!-- card -->
-    <div class="bg-rose-100 w-4/5 m-auto py-10 mt-10 lg:w-4/6 rounded-md p-5">
+    <div
+      class="bg-rose-100 w-4/5 m-auto py-10 my-10 lg:w-4/6 rounded-md p-5"
+      data-aos="zoom-in"
+      data-aos-duration="1000"
+    >
       <!-- profile -->
       <div class="text-center mb-10">
         <p
           style="font-family: 'Chakra Petch', sans-serif; color: #503838"
           class="font-bold text-5xl"
+          data-aos="zoom-out"
+          data-aos-duration="1000"
+          data-aos-delay="500"
         >
           Julita Xu
         </p>
         <p
           style="font-family: 'Chakra Petch', sans-serif; color: #503838"
-          class="font-bold text-3xl"
-        >
-          Visual Communication Design || IDN
-        </p>
+          class="font-bold text-3xl type"
+        ></p>
       </div>
       <!-- akhir profile -->
       <!-- button -->
       <div>
         <a
           href="commission/index.html"
-          class="bg-rose-200 text-center w-10/12 block m-auto p-3 rounded-lg text-2xl font-semibold hover:bg-rose-400 transition-all duration-500 text-white"
+          class="bg-rose-200 text-center w-10/12 block m-auto p-3 rounded-lg font-semibold hover:bg-rose-400 transition-all duration-500 text-white"
           style="font-family: 'Chakra Petch', sans-serif"
-          >COMMISSION</a
-        >
+          data-aos="flip-down"
+          data-aos-duration="1000"
+          data-aos-delay="500"
+          ><ion-icon class="text-sm md:text-xl" name="brush"></ion-icon
+          ><span class="mx-2 md:mx-5 text-md md:text-xl">COMMISSION</span>
+          <ion-icon class="text-sm md:text-xl" name="brush"></ion-icon
+        ></a>
         <a
           href="AboutMe/index.html"
-          class="bg-rose-300 text-center w-10/12 block m-auto p-3 rounded-lg text-2xl font-semibold hover:bg-rose-400 transition-all duration-500 my-10 text-white"
+          class="bg-rose-300 text-center w-10/12 block m-auto p-3 rounded-lg font-semibold hover:bg-rose-400 transition-all duration-500 my-10 text-white"
           style="font-family: 'Chakra Petch', sans-serif"
-          >ABOUT ME</a
-        >
+          data-aos="flip-up"
+          data-aos-duration="1000"
+          data-aos-delay="500"
+          ><ion-icon class="text-sm md:text-xl" name="person"></ion-icon
+          ><span class="mx-2 md:mx-5 text-md md:text-xl">ABOUT ME</span
+          ><ion-icon class="text-sm md:text-xl" name="person"></ion-icon
+        ></a>
       </div>
       <!-- akhir button -->
       <!-- link -->
       <div class="flex justify-center gap-10">
-        <ion-icon
-          style="color: #503838"
-          name="logo-instagram"
-          class="text-3xl"
-        ></ion-icon>
-        <ion-icon
-          style="color: #503838"
-          name="logo-youtube"
-          class="text-3xl"
-        ></ion-icon>
-        <ion-icon
-          style="color: #503838"
-          name="logo-tiktok"
-          class="text-3xl"
-        ></ion-icon>
+        <a target="_blank" href="https://www.instagram.com/jaintbrush/">
+          <ion-icon
+            style="color: #503838"
+            name="logo-instagram"
+            class="text-3xl"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="500"
+          ></ion-icon>
+        </a>
+        <a target="_blank" href="https://www.youtube.com/@julitasuu127"
+          ><ion-icon
+            style="color: #503838"
+            name="logo-youtube"
+            class="text-3xl"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="600"
+          ></ion-icon>
+        </a>
+        <a target="_blank" href="https://www.tiktok.com/@supermanfp"
+          ><ion-icon
+            style="color: #503838"
+            name="logo-tiktok"
+            class="text-3xl"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="700"
+          ></ion-icon>
+        </a>
       </div>
       <!-- akhir link -->
     </div>
@@ -93,5 +126,22 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- akhir aos -->
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/TextPlugin.min.js"></script>
+    <script>
+      gsap.registerPlugin(TextPlugin);
+      gsap.to(".type", {
+        duration: 2.5,
+        text: "Visual Communication Design || IDN",
+      });
+    </script>
+    <!-- akhir gsap -->
   </body>
 </html>
