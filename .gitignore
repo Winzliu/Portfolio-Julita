@@ -1,51 +1,16 @@
-# Direktori node_modules
+# Dependency directories
 node_modules/
 
-# File log dan error
-logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-lerna-debug.log*
-
-# Output dari alat pengembangan
-pids
-*.pid
-*.seed
-*.pid.lock
-
-# Yarn
-yarn-error.log
-yarn.lock
-
-# Dokumentasi
-doc/
-docs/
-
-# file yang dihasilkan
+# Tailwind CSS build directory
 dist/
-coverage/
 
-# Direktori untuk file tempat mengunduh
-.downloads/
+# NPM lock files
+package-lock.json
+yarn.lock
+.pnp
 
-# Direktori tempat menyimpan file build
-build/
-
-# Yarn 2
-.yarn/*
-!.yarn/releases
-!.yarn/plugins
-!.yarn/sdks
-!.yarn/versions
-!.pnp.*
-
-# IDE atau editor spesifik
-.idea/
-.vscode/
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+# Environment configuration
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
