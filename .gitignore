@@ -1,57 +1,51 @@
-# Created by https://www.toptal.com/developers/gitignore/api/windows,visualstudiocode
-# Edit at https://www.toptal.com/developers/gitignore?templates=windows,visualstudiocode
-
+# Direktori node_modules
 node_modules/
 
-### VisualStudioCode ###
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-!.vscode/*.code-snippets
+# File log dan error
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
 
-# Local History for Visual Studio Code
-.history/
+# Output dari alat pengembangan
+pids
+*.pid
+*.seed
+*.pid.lock
 
-# Built Visual Studio Code Extensions
-*.vsix
+# Yarn
+yarn-error.log
+yarn.lock
 
-### VisualStudioCode Patch ###
-# Ignore all local history of files
-.history
-.ionide
+# Dokumentasi
+doc/
+docs/
 
-# Support for Project snippet scope
-.vscode/*.code-snippets
+# file yang dihasilkan
+dist/
+coverage/
 
-# Ignore code-workspaces
-*.code-workspace
+# Direktori untuk file tempat mengunduh
+.downloads/
 
-### Windows ###
-# Windows thumbnail cache files
-Thumbs.db
-Thumbs.db:encryptable
-ehthumbs.db
-ehthumbs_vista.db
+# Direktori tempat menyimpan file build
+build/
 
-# Dump file
-*.stackdump
+# Yarn 2
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+!.pnp.*
 
-# Folder config file
-[Dd]esktop.ini
-
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
-
-# Windows Installer files
-*.cab
-*.msi
-*.msix
-*.msm
-*.msp
-
-# Windows shortcuts
-*.lnk
-
-# End of https://www.toptal.com/developers/gitignore/api/windows,visualstudiocode
+# IDE atau editor spesifik
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
